@@ -1,0 +1,81 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "\/wp-admin\/options-general.php?page=cision-block",
+  "preferredVersions": {
+    "php": "7.4",
+    "wp": "latest"
+  },
+  "phpExtensionBundles": [
+    "kitchen-sink"
+  ],
+  "steps": [
+    {
+      "step": "defineWpConfigConsts",
+      "consts": {
+        "WP_DEBUG": true,
+        "WP_DEBUG_DISPLAY": true
+      }
+    },
+    {
+      "step": "login",
+      "username": "admin",
+      "password": "password"
+    },
+    {
+      "step": "installPlugin",
+      "pluginZipFile": {
+        "resource": "wordpress.org\/plugins",
+        "slug": "cision-block"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "cision_block_settings": {
+          "attachment_field": "Description",
+          "base_slug": "IR",
+          "cache_expire": "0",
+          "categories": "",
+          "count": "100",
+          "date_format": "d-m-Y",
+          "end_date": "",
+          "exclude_css": false,
+          "filter_all_text": "All",
+          "filter_non_regulatory_text": "Non-regulatory",
+          "filter_regulatory_text": "Regulatory",
+          "image_style": "",
+          "internal_links": true,
+          "items_per_page": 5,
+          "language": "sv",
+          "mark_regulatory": true,
+          "non_regulatory_text": "ORDINARY",
+          "notes": [],
+          "readmore": "Read More",
+          "regulatory_text": "REGULATORY",
+          "search_term": "",
+          "show_excerpt": false,
+          "show_files": true,
+          "show_filters": true,
+          "source_uid": "A275C0BF733048FFAE9126ACA64DD08F",
+          "start_date": "",
+          "tags": "",
+          "template": null,
+          "types": [
+            "KMK",
+            "RDV",
+            "PRM",
+            "RPT",
+            "INB",
+            "NBR"
+          ],
+          "use_https": false,
+          "version": "2.9.5",
+          "view_mode": 1
+        }
+      }
+    }
+  ]
+}

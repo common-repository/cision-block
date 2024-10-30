@@ -1,0 +1,38 @@
+#cision-block-admin-header {
+    padding-top: 20px;
+}
+#cision-block-admin-header h1 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+#cision-block-admin-header img {
+    float: left;
+    margin-right: 20px;
+}
+.cision-block-notice {
+    position: relative;
+}
+.cision-block-notice ul {
+    list-style-type: square;
+    padding-left: 2em;
+}
+/* status form */
+#status-form textarea {
+    font-family: monospace;
+    width: 100%;
+    margin: 0;
+    height: 300px;
+    padding: 20px;
+    border-radius: 0;
+    resize: none;
+    font-size: 12px;
+    line-height: 20px;
+    outline: 0;
+}
+/* freemius start fs-submenu-item fs-sub cision-block addons */
+.fs-submenu-item.cision-block.addons {
+    font-weight: 800;
+    color: #adff2f;
+}
+/* freemius end */

@@ -1,0 +1,339 @@
+= 4.1.0
+
+- Remove premium settings.
+
+= 4.0.4
+
+- Use same color for addon and premium links.
+- Add links to addons where appropriate.
+
+= 4.0.3
+s
+- Add filter for settings.
+- Remove dependency for addon.
+
+= 4.0.2
+
+- Bump Freemius SDK to 2.7.2.
+
+= 4.0.1
+
+- Fix: Use FILTER_VALIDATE_BOOLEAN for compatibility.
+
+= 4.0.0
+
+- Add: Setting restrictions.
+- Add: DI container.
+- Add: Service and refactor code.
+
+= 3.1.0
+
+- Update: Freemius SDK to 2.7.0
+- Add: Basic tests.
+- Add: Workflow for github.
+
+= 3.0.0
+
+- Add: filters.
+- Add: locale class.
+- Add: support for addons.
+- Refactor: code to use PHP 7.4.
+- Fix: ordering fields on settings page.
+- Add: missing ids on setting pages.
+- Add: improve status page.
+- Fix: make saveSettings testable.
+
+= 2.9.5
+
+- Fix issue with empty feed when using The SEO Framework plugin.
+
+= 2.9.4
+
+- Fix issue with title when using The SEO Framework plugin.
+
+= 2.9.3
+
+- Fix bug where settings was not saved during activation.
+- Fix bug that triggered warnings when calling htmlspecialchars_decode().
+- Fix bug in Settings class for removing entries.
+- Remove languages not supported by Cision.
+
+= 2.9.2
+
+- Fix deprecation warnings.
+- Fix bug in widget were some settings never were saved.
+- Add setting for attachment labels.
+
+= 2.9.1
+- Fix unique cache key depending on shortcode arguments.
+- Add WPML string translations.
+- Fix deprecation warning for PHP 8.1.
+
+= 2.9.0
+- Fix caching issue with filters and pagination.
+
+= 2.8.0
+- Fix for filter buttons.
+
+= 2.7.2
+- Improve status page.
+- Add post type for templates.
+- Throw valid exception in RemoteRequest.
+- Log error when failing to fetch feed.
+- Check if notification should be dismissible or not.
+
+= 2.7.1
+- Add PHP 8.0 support.
+
+= 2.7.0
+- Add missing global in article template.
+- Add option to toggle attachment in article.
+
+= 2.6.0
+- Fixes a bug where the widget caused a crash when using elementor.
+
+= 2.5.0
+- Do not use constant for text domain.
+- Use disabled to set input attribute.
+- Set headers for remote request.
+- Bump composer installers.
+- Use PHP and Wordpress version from settings.
+- Remove unused override in settings.
+- Add settings to toggle excerpts.
+
+= 2.4.3.1
+- Fix bug where notifications could not be closed.
+
+= 2.4.3
+- Minor update on how notifications are managed.
+- Change from *none* to <none> to disable buttons and text.
+- Add PRO version notice.
+
+= 2.4.2
+- Support to use either name or filename of page template.
+
+= 2.4.1
+- Add Http classes.
+- Handle remote request exceptions.
+- Prevent un-serialization of singleton.
+- Add support to set template for feed.
+
+= 2.4.0
+- Use plugin package.
+- Remove settings textarea from configuration page.
+- Refactor save settings method.
+- Add language dropdown.
+- Add possibility to exclude stylesheet.
+- Add version to script and stylesheet.
+- Add status page.
+- Add admin header.
+- Add admin notifications.
+
+= 2.3.3
+- Fix a bug which triggered PHP warnings caused by undefined constants.
+- Fix a bug where cached could not be cleared since widget_id was not set.
+
+= 2.3.2
+- Add mark release and filter settings to widget.
+- Check PHP and Wordpress version on activation.
+
+= 2.3.1
+- Fix bug with select inputs.
+
+= 2.3.0
+- Add filters.
+- Add support to mark releases as regulatory and non-regulatory in the feed.
+- Add autoloader
+- Update minimum supported PHP version to 5.6.
+
+= 2.2.2 =
+- Improve singleton class.
+
+= 2.2.1 =
+- Do not render anything if the feed is empty.
+- Add title attribute to img tag.
+- Change name of experimental template.
+
+= 2.2.0 =
+- Use Regulatory argument when fetching feeds.
+- Add SearchTerm setting and argument.
+- Use select correctly in any controls.
+- Move defines to class constants.
+- Clean and sort invalid settings before saving.
+- Make sure the json extension is installed and enabled.
+
+= 2.1.0 =
+- Fixes a bug where the plugin could not be deleted.
+
+= 2.0.0 =
+- Add support to fetch and display press releases in Wordpress.
+- Add block_id to all filters.
+- Add tabs.
+- Remove unused methods.
+- Use shorter names in form inputs.
+- Fixed name of cache key in shortcode.
+
+= 1.5.4 =
+- Remove is_regulatory settings and instead add view_mode that supports three states.
+
+= 1.5.3 =
+- Clear cache when post is updated.
+- Use block_id in cache name.
+- Check for update when plugin is initialized.
+
+= 1.5.2 =
+- Check so yaml extension is enabled.
+- Add templates folder.
+- Check so items is set or not when mapping sources.
+
+= 1.5.1 =
+- Add support to filter feed based on categories.
+- Fix deprecation warnings.
+- Fix php5.3 error message.
+- Add composer integration.
+
+= 1.5.0 =
+- Major update of code base.
+- Use safe version of wp_remote_request().
+- Add correct filter when sanitizing settings.
+- Add link to settings page under plugin page.
+- Add textarea holding settings in json format.
+
+= 1.4.9.1 =
+- Fixed a bug where source id from widget was never used.
+
+= 1.4.9 =
+- Removed duplicate language field from widget.
+- Removed classes from select elements in widget form.
+- Add date_format to shortcode arguments.
+- Add date_format to widget settings.
+
+= 1.4.8 =
+- Fixed a bug where pagination was not working in preview.
+- Add User-Agent request header.
+
+= 1.4.7 =
+- Improve filtering of variables and post data.
+- Add separate cache key for widget.
+- Add support to change text or remove the 'Read more' button.
+- Corrected call to register_activation_hook().
+
+= 1.4.6 =
+- Add separate method for clearing transient cache.
+- Remove unused namespace.
+- Add source_uid to shortcode attributes.
+- Add language form field to widget.
+
+= 1.4.5 =
+- Fixed a bugg where settings gets overwritten by the use of a widget or another block.
+- Add code to remove any cision_block_widgets from the sidebars during removal.
+- Change member visibility.
+- Add constants for cision specific query arguments.
+- Change description for start and end date as suggested in https://wordpress.org/support/topic/suggestion-regarding-date-format/.
+- Major update of readme.
+- Added image style to widget settings.
+- Added image style to shortcode attributes.
+- Added filters to set attributes of wrappers in template.
+- Added id shortcode parameter used to name a specific block.
+- Added filters for suffix and prefix.
+- Added filters to set attributes and active class for pager.
+- Added support to filter items based on language.
+
+= 1.4.4 =
+- Fixed a bugg triggered when no shortcort argument was set.
+
+= 1.4.3 =
+- Allow people to change what capability is required to use this plugin.
+- Improve filter validation.
+- Refactor code to conform with PSR2 standard.
+- Add support to disable images.
+
+= 1.4.2 =
+- Add date format option.
+
+= 1.4.1 =
+- All images can now be handled over https.
+- Add support to select size of image.
+
+= 1.4.0 =
+- Add start and end date to widget.
+- Add separate class for backend specific code.
+
+= 1.3.2 =
+- Add support to choose start and end date for collected feed items.
+
+= 1.3.1 =
+- Add support to override settings from widget.
+
+= 1.3.0 =
+- Add settings field for cache lifetime.
+- Remove transient cache when settings are saved.
+
+= 1.2.9 =
+- Add support to filter feed based on IsRegulatory field.
+
+= 1.2.8 =
+- Add tags setting that can be used to filter a feed on keywords.
+- Improved error checking for remote request.
+
+= 1.2.7 =
+- Place settings page under general options.
+
+= 1.2.6 =
+- Add swedish translation.
+
+= 1.2.5 =
+- Add support to sort feed through the cision_block_sort filter.
+- Return template output in order to get correct placement of the shortcode in post content.
+
+= 1.2.4 =
+- Add separate cache key for each post containing a cision block shortcode.
+
+= 1.2.3 =
+- Add support to override which type of pressreleases to display in shortcode arguments.
+
+= 1.2.2 =
+- Add shortcode arguments that can be used to override block settings.
+- Switched to using wp_remote_request() instead of file_get_contents().
+
+= 1.2.1 =
+- Updated readme with widget tag.
+- Added new icons.
+
+= 1.2.0 =
+- Added a cision block widget.
+
+= 1.1.6 =
+- Rename template to match module name.
+- Add variable section in template.
+- Use version_compare() to check version.
+- Corrected call to load_plugin_textdomain().
+
+= 1.1.5 =
+- Fixed invalid pagination.
+- Added support to select which feed types to display.
+
+= 1.1.4 =
+- Added correct order for filter parameters.
+- Check so feed items are set before pagination.
+- Added types setting variable.
+
+= 1.1.3 =
+- Verify version in settings on load.
+- Added missing delete() function.
+
+= 1.1.2 =
+- Added active class for pager.
+- Store version string in settings.
+- Added separate Settings class.
+- Added activation hook.
+
+
+= 1.1.1 =
+- Added pager.
+
+= 1.1 =
+- Added a filter, cision_map_source_item, that can be used to extract more data for each feed item.
+
+= 1.0 =
+- Initial commit.
